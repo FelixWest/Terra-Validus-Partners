@@ -1,0 +1,85 @@
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rem; /* Ensures footer sticks to the bottom */
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: black;
+  background-color: rgba(39, 152, 126, 0.214);
+}
+
+.footerSocialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footerSocialMediaIcon {
+  margin: 0px 4px;
+  width: 25px;
+  height: 25px;
+}
+
+.footerInfo {
+  display: flex;
+  justify-content: center;
+}
+
+.footerInfoLeft,
+.footerInfoCenter,
+.footerInfoRight {
+  font-size: x-small;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 30%;
+}
+
+.footerInfoName,
+.footerInfoEmail,
+.footerInfoNumber {
+  margin-bottom: 10px;
+}
+
+.footerInfoName,
+.footerInfoReturns {
+  text-align: start;
+}
+
+.footerInfoEmail,
+.footerInfoTerms {
+  text-align: center;
+}
+
+.footerInfoNumber,
+.footerInfoContact {
+  text-align: end;
+}
+
+.footerDate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footerSeperator {
+  flex-grow: 1;
+  border: none;
+  height: 1px;
+  background-color: inherit;
+  width: 100%;
+}
+
+.footerName {
+  display: flex;
+  justify-content: center;
+}
+
+.footerBottomName {
+  text-transform: uppercase;
+  font-family: RobotoBold;
+  font-size: large;
+  margin: 0px 20px;
+}

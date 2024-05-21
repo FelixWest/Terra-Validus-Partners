@@ -1,0 +1,61 @@
+.backgroundSection {
+  height: calc(85vh - 5rem);
+  position: relative;
+  background-image: linear-gradient(
+      rgba(36, 42, 46, 0.8),
+      rgba(36, 42, 46, 0.8)
+    ),
+    url("../stockholm_about_us.jpg");
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.backgroundSection h1 {
+  padding-top: 40rem;
+  font-size: 48px;
+}
+
+.aboutUs {
+  display: grid;
+  grid-template-columns: 1fr; /* Two columns */
+  gap: 10%; /* Gap between columns */
+  padding: 20px 25%;
+  position: relative;
+  top: -5rem; /* This should be equal to the padding-top value of main.contact */
+  background-color: white; /* Background color to separate from image */
+  color: black;
+  z-index: 2; /* Make sure this is below the background section */
+  text-align: center;
+}
+
+.aboutUs h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.aboutUs p {
+  font-size: 16px;
+}
+
+.aboutUsPicture {
+  width: 100%; /* Ensure the picture takes full width of its container */
+}
+
+.aboutUsPicture img {
+  max-width: 100%; /* Make sure the image doesn't exceed the container */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 5rem;
+}

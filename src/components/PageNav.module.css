@@ -1,0 +1,54 @@
+.nav {
+  position: fixed; /* Position the navigation bar fixed to ensure it stays at the top */
+  top: 17rem; /* Align to the top of the viewport */
+
+  width: 100%; /* Take up the full width */
+  background-color: inherit; /* Set the background color */
+  z-index: 1000; /* Ensure it's above other content */
+  transition: top 0.3s; /* Add transition for smooth animation */
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the nav items horizontally */
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  margin-right: 4rem; /* Adjust spacing between nav items */
+}
+
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  color: var(--color-light--2);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* CSS Modules feature */
+.nav a:global(.active) {
+  color: var(--color-brand--2);
+}
+
+a.ctaLink:link,
+a.ctaLink:visited {
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--0);
+  padding: 0.8rem 2rem;
+  border-radius: 7px;
+}
+
+/* Show the navigation bar */
+.visible {
+  top: 17rem;
+}
+
+/* Hide the navigation bar */
+.hidden {
+  top: -10rem;
+}
